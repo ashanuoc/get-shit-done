@@ -1,7 +1,7 @@
 {
   "name": "get-shit-done-cc",
   "version": "1.10.0-experimental.0",
-  "description": "A meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
+  "description": "A meta-prompting, context engineering and spec-driven development system for Claude Code by T\u00c2CHES.",
   "bin": {
     "get-shit-done-cc": "bin/install.js"
   },
@@ -21,7 +21,7 @@
     "context-engineering",
     "spec-driven-development"
   ],
-  "author": "TÂCHES",
+  "author": "T\u00c2CHES",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -35,7 +35,9 @@
     "node": ">=16.7.0"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "ink": "^6.6.0",
+    "node-fetch": "^3.3.2",
     "react": "^19.2.4"
   },
   "devDependencies": {
