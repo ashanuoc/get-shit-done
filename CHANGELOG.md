@@ -9,6 +9,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Fixed
 - Scope phase counting in `buildStateFrontmatter` and `cmdPhaseComplete` to current milestone — multi-milestone projects no longer report inflated total/completed phases
 
+## [1.22.1] - 2026-03-02
+
+### Added
+- Discuss phase now loads prior context (PROJECT.md, REQUIREMENTS.md, STATE.md, and all prior CONTEXT.md files) before identifying gray areas — prevents re-asking questions you've already answered in earlier phases
+
+### Fixed
+- Shell snippets in workflows use `printf` instead of `echo` to prevent jq parse errors with special characters
+
 ## [1.22.0] - 2026-02-27
 
 ### Added
@@ -1394,7 +1402,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - YOLO mode for autonomous execution
 - Interactive mode with checkpoints
 
-[Unreleased]: https://github.com/glittercowboy/get-shit-done/compare/v1.22.0...HEAD
+[Unreleased]: https://github.com/glittercowboy/get-shit-done/compare/v1.22.1...HEAD
+[1.22.1]: https://github.com/glittercowboy/get-shit-done/releases/tag/v1.22.1
 [1.22.0]: https://github.com/glittercowboy/get-shit-done/releases/tag/v1.22.0
 [1.21.1]: https://github.com/glittercowboy/get-shit-done/releases/tag/v1.21.1
 [1.21.0]: https://github.com/glittercowboy/get-shit-done/releases/tag/v1.21.0
